@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table styling</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+      }
+      table {
+        width: 50%;
+        border-collapse: collapse;
+      }
+      /* td {
+        text-align: center;
+        height: 50px;
+        vertical-align: middle;
+      } */
+      th,
+      td {
+        padding: 10px;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 3px solid #ddd;
+      }
+      tr:hover {
+        background-color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        User Info
+      </caption>
+      <tr>
+        <th>S.no</th>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+        <th rowspan="2">Phone</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Vinci</td>
+        <td>Albert</td>
+        <td>17</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Leo</td>
+        <td>Thame</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Jhonny</td>
+        <td>Boy</td>
+        <td>45</td>
+      </tr>
+    </table>
+  </body>
+</html>
