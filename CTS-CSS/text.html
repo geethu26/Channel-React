@@ -17,14 +17,36 @@
       p.indent {
         text-indent: 50px; /* Indent the first line of the paragraph */
       }
+      h2 {
+        letter-spacing: 5px;
+      }
+      h3 {
+        letter-spacing: -2px;
+      }
+      p.new {
+        word-spacing: 10px;
+      }
+      .shadow {
+        text-shadow: 2px 2px 5px red;
+      }
     </style>
   </head>
   <body>
     <h1>Using the text transform property</h1>
-
     <p class="uppercase">The text is transformed to uppercase</p>
     <p class="lowercase">The text is transformed to lowercase</p>
     <p class="capitalize">The text is transformed to capitalize</p>
     <p class="indent">This text is indented</p>
+
+    <h1>Using text spacing</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+
+    <h1>Using word spacing</h1>
+    <p class="new">
+      This paragraph has increased word spacing. The space between words is
+      larger than normal.
+    </p>
+    <h2 class="shadow">shadow will be seen here</h2>
   </body>
 </html>
