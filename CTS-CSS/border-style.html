@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border width</title>
+    <style>
+      p.one {
+        border-style: solid;
+        border-width: 5px;
+      }
+      .two {
+        border-style: solid;
+        border-width: medium;
+        border-color: blueviolet;
+      }
+      .three {
+        border-style: dotted;
+        border-width: 2px;
+        border-color: hotpink;
+      }
+      .four {
+        border-style: dotted;
+        border-width: thick;
+        border-color: indianred;
+      }
+      /* border-color will not work unless a style is used */
+      .five {
+        border-style: double;
+        border-width: 15px;
+        border-color: deeppink;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>The border-width Property</h2>
+    <p>This property specifies the width of the four borders</p>
+    <p class="one">One text</p>
+    <p class="two">Two text</p>
+    <p class="three">Three text</p>
+    <p class="four">Four text</p>
+    <p class="five">Five text</p>
+  </body>
+</html>
