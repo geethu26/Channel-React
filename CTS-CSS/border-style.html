@@ -3,32 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Border width</title>
+    <title>Border styling</title>
     <style>
       p.one {
         border-style: solid;
         border-width: 5px;
+        border-color: red green blue yellow;
+        padding: 5px;
+        /* top bottom left and right different colors */
       }
       .two {
         border-style: solid;
         border-width: medium;
         border-color: blueviolet;
+        padding: 5px;
       }
       .three {
         border-style: dotted;
         border-width: 2px;
         border-color: hotpink;
+        padding: 5px;
       }
       .four {
         border-style: dotted;
         border-width: thick;
         border-color: indianred;
+        padding: 5px;
       }
       /* border-color will not work unless a style is used */
       .five {
         border-style: double;
         border-width: 15px;
         border-color: deeppink;
+        padding: 5px;
+      }
+      .normal {
+        border: 2px solid green;
+        padding: 5px;
+      }
+      .round1 {
+        border: 2px solid green;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      .round2 {
+        border: 2px solid green;
+        border-radius: 8px;
+        padding: 5px;
+      }
+      .round3 {
+        border: 2px solid green;
+        border-radius: 12px;
+        padding: 5px;
       }
     </style>
   </head>
@@ -40,5 +66,10 @@
     <p class="three">Three text</p>
     <p class="four">Four text</p>
     <p class="five">Five text</p>
+    <h2>Rounded Border</h2>
+    <p class="normal">Normal border</p>
+    <p class="round1">Round border</p>
+    <p class="round2">Rounder border</p>
+    <p class="round3">Roundest border</p>
   </body>
 </html>
