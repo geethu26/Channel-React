@@ -29,6 +29,13 @@
         height: 100px;
         border: 3px solid greenyellow;
       }
+      div.sticky {
+        position: -webkit-sticky;
+        top: 0;
+        background-color: lightblue;
+        padding: 10px;
+        border: 3px solid greenyellow;
+      }
     </style>
   </head>
   <body>
@@ -38,30 +45,47 @@
       positioned according to normal flow of the page.
     </p>
     <div class="static">The div element has position: static</div>
+    <hr />
+    <h2>position:relative</h2>
+    <p>
+      An element with position:relative; is positioned relative to its normal
+      position;
+    </p>
+    <div class="relative">div element has position: relative</div>
+    <hr />
+    <h2>position:fixed</h2>
+    <p>
+      An element with position:fixed; is positioned relative to the viewport
+      position, which means it always stays in the same place even when the page
+      is scrolled.;
+    </p>
+    <div class="fixed">div element has position: fixed</div>
+    <hr />
+    <h2>position:absolute</h2>
+    <p>
+      An element with position:absolute; is positioned relative to the nearest
+      positioned ancestor (i.e., the nearest ancestor element with a position
+      value other than static). If there is no such ancestor, it is positioned
+      relative to the initial containing block (usually the viewport).
+    </p>
+    <div class="relative">div element has position: relative</div>
+    <div class="absolute">div element has position: absolute</div>
+    <hr />
+    <h2>position:sticky</h2>
+    <p>
+      in this example, the sticky element will stick to the top of the,when you
+      reach its scroll position.
+    </p>
+    <p>scroll back up to remove stickiness</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur est
+      corrupti corporis voluptatibus fugiat, voluptates ut iure nisi numquam
+      minus fuga in aliquid. Molestiae velit veritatis vero praesentium quisquam
+      labore laboriosam accusantium hic officia ad, officiis, cum, obcaecati qui
+      aspernatur odit? Quidem ratione inventore cupiditate quae amet sit,
+      dignissimos tempora!
+    </p>
+    <div class="sticky">position:sticky</div>
+    <hr />
   </body>
-  <hr />
-  <h2>position:relative</h2>
-  <p>
-    An element with position:relative; is positioned relative to its normal
-    position;
-  </p>
-  <div class="relative">div element has position: relative</div>
-  <hr />
-  <h2>position:fixed</h2>
-  <p>
-    An element with position:fixed; is positioned relative to the viewport
-    position, which means it always stays in the same place even when the page
-    is scrolled.;
-  </p>
-  <div class="fixed">div element has position: fixed</div>
-  <hr />
-  <h2>position:absolute</h2>
-  <p>
-    An element with position:absolute; is positioned relative to the nearest
-    positioned ancestor (i.e., the nearest ancestor element with a position
-    value other than static). If there is no such ancestor, it is positioned
-    relative to the initial containing block (usually the viewport).
-  </p>
-  <div class="relative">div element has position: relative</div>
-  <div class="absolute">div element has position: absolute</div>
 </html>
