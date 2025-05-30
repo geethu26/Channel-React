@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Navigartion to Cards</title>
+  </head>
+  <body>
+    <div class="m-4">
+      <div class="card text-center" style="width: 300px">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="myTab">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active" data-bs-toggle="tab"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#profile" class="nav-link" data-bs-toggle="tab"
+                >Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#messages" class="nav-link" data-bs-toggle="tab"
+                >Messages</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="home">
+              <h5 class="card-title">Home tab content</h5>
+              <p class="card-text">
+                Here is some example text make up the tab's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="tab-pane fade" id="profile">
+              <h5 class="card-title">Profile tab content</h5>
+              <p class="card-text">
+                This is my profile tab content. It contains information about
+                the user.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="tab-pane fade" id="messages">
+              <h5 class="card-title">Message tab content</h5>
+              <p class="card-text">
+                This is my message tab content. It contains messages for the
+                user.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
