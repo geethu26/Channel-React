@@ -1,0 +1,27 @@
+<!-- Write a program to count names starting with "A" -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Count names</title>
+  </head>
+  <body>
+    <h2>Names starting with 'A':</h2>
+    <p id="names"></p>
+    <script>
+      var students = ["Anna", "Arun", "Bella", "Anita", "Brian"];
+      var newarr = [];
+      var count = 0;
+      for (var i = 0; i < students.length; i++) {
+        if (students[i].charAt(0) == "A") {
+          newarr.push(students[i]);
+          count++;
+        }
+      }
+      document.getElementById(
+        "names"
+      ).innerHTML = `Actual array:[${students}]<br>Names with A: [${newarr}]<br>Count: ${count}`;
+    </script>
+  </body>
+</html>

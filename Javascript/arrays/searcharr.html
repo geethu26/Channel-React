@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search element in array</title>
+  </head>
+  <body>
+    <h2>Search an element in an arry</h2>
+    <p id="ex"></p>
+    <script>
+      var cities = ["Delhi", "Mumbai", "Chennai", "Kolkatta"];
+      var target = "Chennai";
+      var found = false;
+      for (var i = 0; i < cities.length; i++) {
+        if (cities[i] === target) {
+          found = true;
+          break;
+        }
+      }
+      document.getElementById(
+        "ex"
+      ).innerHTML = `Is ${target} in list? ${found}`;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!-- 1.change bg-color of div -->
+<!-- 2.add text shadow in all paras given essay -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excercises</title>
+    <style>
+      #box {
+        padding: 20px;
+        border: 2px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">Hello</div>
+    <button onclick="changeColor()" style="margin: 10px">
+      Click to change bg-color
+    </button>
+
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi repellat a
+      impedit dolore, harum ab ea modi nobis quisquam tenetur sint repellendus
+      tempore libero eveniet vel! Eaque aperiam corporis possimus. Iure quisquam
+      eveniet accusamus officiis fugit libero perspiciatis! Atque error quasi
+      libero ad porro rerum, magni eius consequatur distinctio voluptates natus
+      molestiae ipsa inventore officia consequuntur illo obcaecati recusandae
+      non!
+    </p>
+
+    <button onclick="addTextShadow()">Add text shadow to paragraphs</button>
+
+    <script>
+      function changeColor() {
+        const div = document.getElementById("box");
+        div.style.backgroundColor = "lightblue";
+      }
+      function addTextShadow() {
+        const para = document.getElementById("para");
+        para.style.textShadow = "2px 2px gray";
+      }
+    </script>
+  </body>
+</html>

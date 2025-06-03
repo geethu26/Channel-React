@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Prototype example</title>
+  </head>
+  <body>
+    <h2>Employee Details:</h2>
+    <p id="ex"></p>
+
+    <script>
+      function employee(name, dept) {
+        this.name = name;
+        this.dept = dept;
+      }
+      employee.prototype.salary = 30000;
+      var xy = new employee("Anil", "IT");
+      document.getElementById(
+        "ex"
+      ).innerHTML = `Employee name: ${xy.name}<br>Employee Department: ${xy.dept}<br>Employee salary: ${xy.salary}`;
+    </script>
+  </body>
+</html>

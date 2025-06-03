@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Methods</title>
+  </head>
+  <body>
+    <h2>Built in array methods</h2>
+    <hr />
+    <h3>Filter Method</h3>
+    <p id="even"></p>
+    <hr />
+    <p id="price"></p>
+    <hr />
+    <p id="team"></p>
+    <hr />
+    <p id="team1"></p>
+    <script>
+      let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      let prices = [1800, 2000, null, 3000, 5000, "Thousand", 500];
+      function checkEven(number) {
+        if (number % 2 == 0) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      let evenNumbers = numbers.filter(checkEven);
+      document.getElementById("even").innerHTML = evenNumbers;
+      function checkPrices(element) {
+        return element >= 2000 && !Number.isNaN(element);
+      }
+      let filteredPrices = prices.filter(checkPrices);
+      document.getElementById("price").innerHTML = filteredPrices;
+      const team = [
+        { name: "Bill", age: 10 },
+        { name: "Linus", age: 14 },
+        { name: "Alan", age: 20 },
+        { name: "Steve", age: 34 },
+      ];
+      function isAdult(member) {
+        return member.age >= 18;
+      }
+      const result = team.find(isAdult);
+      document.getElementById(
+        "team"
+      ).innerHTML = `Name:${result.name}, Age:${result.age}`;
+
+      const result1 = team.filter((member) => member.age >= 18);
+      let output = result1
+        .map((member) => `Name:${member.name},Age:${memmber.age}`)
+        .join("<br>");
+      document.getElementById("team1").innerHTML = output;
+    </script>
+  </body>
+</html>

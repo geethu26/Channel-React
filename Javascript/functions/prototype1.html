@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype Object Example</title>
+  </head>
+  <body>
+    <h1>Prototype Object Example</h1>
+    <p id="ex"></p>
+    <script>
+      function Student(name, age, marks) {
+        this.name = name;
+        this.age = age;
+        this.marks = marks;
+      }
+      var javaStud = new Student("Smith", 22, 78);
+      var embedStud = new Student("Mark", 23, 85);
+      console.log(javaStud.marks);
+      document.getElementById("ex").innerHTML = `Java Student Marks:
+        ${javaStud.marks}<br>Embed Student Marks:
+        ${embedStud.marks}`;
+    </script>
+  </body>
+</html>

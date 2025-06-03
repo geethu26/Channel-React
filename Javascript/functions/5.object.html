@@ -1,0 +1,26 @@
+<!-- js to create an object product and add property name, quantity and price.
+ Access all props and display  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product object</title>
+    <script>
+      var product = {
+        name: "JBL headphone",
+        quantity: 35,
+        price: 5750,
+      };
+      function showDetails() {
+        const result = `Product name: ${product.name}<br> Product quantity: ${product.quantity}<br>Price: Rs.${product.price}`;
+        document.getElementById("details").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Product details</h2>
+    <button onclick="showDetails()">Show</button>
+    <p id="details"></p>
+  </body>
+</html>

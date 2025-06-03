@@ -1,0 +1,23 @@
+<!-- Modify text-align, font-size, font-family of h1 using getElementbyID -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array example</title>
+  </head>
+  <body>
+    <h1 id="heading">Welcome to another page.</h1>
+    <button onclick="modifyHeading()">Change style</button>
+
+    <script>
+      function modifyHeading() {
+        const heading = document.getElementById("heading");
+        heading.style.textAlign = "center";
+        heading.style.fontSize = "40px";
+        heading.style.fontFamily = "Arial, san-seriff";
+        heading.style.color = "red";
+      }
+    </script>
+  </body>
+</html>

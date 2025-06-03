@@ -1,0 +1,41 @@
+<!-- js to create a parent object employee(name,id,salary),and child obj manager(name,branch). Inherit all props of employee and display . -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parent-Child-Prototyping</title>
+  </head>
+  <body>
+    <h2>Employee details:</h2>
+    <p id="ex"></p>
+    <script>
+      //constructor function: Employee
+      function Employee(name, id, salary) {
+        this.name = name;
+        (this.id = id), (this.salary = salary);
+      }
+
+      //constructor function: Manager
+      function Manager(name, id, salary, managerName, branch) {
+        Employee.call(this, name, id, salary);
+        this.managerName = managerName;
+        this.branch = branch;
+      }
+
+      const manager = new Manager(
+        "Jake Kellman",
+        "PL007",
+        1500000,
+        "Kate Livre",
+        "IT"
+      );
+      document.getElementById(
+        "ex"
+      ).innerHTML = `Employee Name: ${manager.name}<br>
+      Employee ID: ${manager.id}<br>Salary:${manager.salary}<br>
+      Manager Name: ${manager.managerName}<br>Branch: ${manager.branch}`;
+    </script>
+  </body>
+</html>
