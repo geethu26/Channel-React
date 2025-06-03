@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form Validation</title>
+
+    <script>
+      function validateForm() {
+        let uname = document.getElementById("username").value;
+        let errorMessage = "";
+        if (uname.trim() === "") {
+          errorMessage = "Username cannot be empty.";
+          document.getElementById("message").innerHTML = errorMessage;
+          return false;
+        } else {
+          document.getElementById("message").innerHTML = uname.trim();
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="return validateForm()" action="">
+      <input type="text" id="username" placeholder="Enter username" />
+      <button type="submit">Submit</button>
+      <p id="message"></p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature converter</title>
+  </head>
+  <body>
+    <h1>Convert temperature from celcius to faranheit:</h1>
+    <input type="number" id="celcius" placeholder="Celcius" />
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+
+    <script>
+      function toFahrenheit(c) {
+        return (9 / 5) * c + 32;
+      }
+      function convert() {
+        let celcius = parseFloat(document.getElementById("celcius").value);
+        let far = toFahrenheit(celcius);
+        document.getElementById("result").innerHTML = `Faranheit:${far}`;
+      }
+    </script>
+  </body>
+</html>

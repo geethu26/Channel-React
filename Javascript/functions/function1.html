@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function example</title>
+    <script>
+      function addition() {
+        var num1 = parseInt(document.getElementById("input1").value);
+        var num2 = parseInt(document.getElementById("input2").value);
+        var result; //varisable declaration
+        result = num1 + num2; //computing result
+        // console.log(result); //output
+        document.getElementById("para1").innerHTML = "Sum:" + result;
+      }
+      //   addition(5, 6); //function call
+    </script>
+  </head>
+  <body>
+    <h1>Working with Functions</h1>
+    <label for="num1">Enter 1st number:</label>
+    <input type="number" id="input1" /><br /><br />
+    <label for="num1">Enter 2nd number:</label>
+    <input type="number" id="input2" />
+    <p id="para1"></p>
+    <button onclick="addition()">Click here for sum</button>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter with global and local scope</title>
+  </head>
+  <body>
+    <button onclick="incrementCounter()">Click</button>
+    <p id="countDisplay">Count: 0</p>
+    <script>
+      let count = 0;
+      console.log(a); //undefined - hoisting
+      var a = 10;
+      console.log(b);
+      let b = 13; // let doesnt allow hoisting
+      console.log(b);
+      function incrementCounter() {
+        count++;
+        let message = `Count: ${count}`;
+        document.getElementById("countDisplay").innerHTML = message;
+      }
+    </script>
+  </body>
+</html>

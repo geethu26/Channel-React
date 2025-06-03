@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formal and Actual arguments</title>
+    <script>
+      function mul(num1, num2) {
+        //num1 and num2 are formal arguments
+        var result = num1 * num2;
+        document.getElementById("mul").innerHTML = "Mul" + mul;
+      }
+      var x = 6,
+        y = 9;
+      mul(x, y); //actual paramenter can be sent direct or declare and then use
+    </script>
+  </head>
+  <body>
+    <h1>Multiplication of 2 numbers:</h1>
+    <p id="mul"></p>
+    <button onclick="mul(4,5)">click</button>
+  </body>
+</html>
