@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback</title>
+  </head>
+  <body>
+    <h1>Callback example</h1>
+    <script>
+      //   function greet(name, callback) {
+      //     console.log("Good day," + name);
+      //     callback();
+      //   }
+      //   function sayBye() {
+      //     console.log("Good Bye!!");
+      //   }
+      //   greet("Geethu", sayBye);
+
+      function greet(callback) {
+        console.log("Good day.");
+        callback("Geethu");
+      }
+      function sayBye(name) {
+        console.log("Good Bye!!", name);
+      }
+      function sayThanks(name) {
+        console.log("Thank you.", name);
+      }
+      greet(sayBye);
+      greet(sayThanks);
+    </script>
+  </body>
+</html>

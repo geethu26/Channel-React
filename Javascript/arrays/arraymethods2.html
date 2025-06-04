@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finding Element exists</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <script>
+      const team = [
+        { name: "Bill", age: 10 },
+        { name: "Linus", age: 14 },
+        { name: "Alan", age: 20 },
+        // { name: "Steve", age: 34 },
+      ];
+
+      let newMember = { name: "Steve", age: 34 };
+
+      const index = team.findIndex((member) => member.name === newMember.name);
+      let message = " ";
+      if (index !== -1) {
+        message = `${newMember.name} already exists at index ${index}`;
+      } else {
+        team.push(newMember);
+        message = `${newMember.name} was added to the team.`;
+      }
+
+      let teamList = team
+        .map((m) => `Name: ${m.name},Age: ${m.age}`)
+        .join("<br>");
+      document.getElementById("output").innerHTML =
+        message + "<br><br>" + "<strong>current team: </strong><br>" + teamList;
+    </script>
+  </body>
+</html>

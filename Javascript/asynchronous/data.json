@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "email": "alice@example.com",
+      "age": 29,
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "email": "bob@example.com",
+      "age": 35,
+      "role": "editor"
+    },
+    {
+      "id": 3,
+      "name": "Charles",
+      "email": "charles@example.com",
+      "age": 28,
+      "role": "viewer"
+    },
+    {
+      "id": 4,
+      "name": "Tim",
+      "email": "timmy@example.com",
+      "age": 32,
+      "role": "editor"
+    },
+    {
+      "id": 5,
+      "name": "Alexandra",
+      "email": "alex@example.com",
+      "age": 21,
+      "role": "viewer"
+    }
+  ]
+}

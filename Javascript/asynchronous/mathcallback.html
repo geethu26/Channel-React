@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math callback</title>
+  </head>
+  <body>
+    <h1>Math Callback Function</h1>
+    <script>
+      function calculate(a, b, callback) {
+        return callback(a, b);
+      }
+      function add(x, y) {
+        return x + y;
+      }
+      function sub(x, y) {
+        return x - y;
+      }
+      function mul(x, y) {
+        return x * y;
+      }
+      function div(x, y) {
+        return x / y;
+      }
+
+      console.log("Addition:", calculate(16, 4, add));
+      console.log("Subtraction:", calculate(16, 4, sub));
+      console.log("Multiplication:", calculate(16, 4, mul));
+      console.log("Division:", calculate(16, 4, div));
+    </script>
+  </body>
+</html>

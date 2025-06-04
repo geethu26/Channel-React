@@ -1,0 +1,36 @@
+✅ Case Study: Task Manager using JavaScript DOM and Array Methods
+
+🟩 Problem Statement:
+Individuals often struggle to stay organized and track tasks effectively throughout the day. Many simple web-based task managers lack real-time interactivity or ease of use.
+
+🟨 Objective:
+Develop a simple, interactive Task Manager using HTML, CSS, and JavaScript that allows users to:
+
+Add new tasks
+Mark tasks as complete/incomplete
+Delete tasks dynamically
+View updated task lists instantly without reloading the page
+
+🟦 Key Functional Requirements:
+Add Task: Users should be able to input a task and add it to a visual list.
+Display Task List: Tasks should be rendered as a list using DOM elements.
+Toggle Completion: Clicking a button should mark a task as complete or incomplete.
+Delete Task: Users should be able to remove a task from the list.
+Instant Feedback: All changes should reflect immediately using JavaScript array operations and DOM updates.
+
+🧰 Technical Implementation:
+🔹 HTML:
+
+Used to structure input fields, buttons, and display area (like a <ul> list).
+
+🔹 CSS:
+
+Applied basic styling to enhance user experience and visually indicate task status (e.g., strikethrough for completed tasks).
+
+🔹 JavaScript + Array Methods:
+
+Feature	Array Method	Description
+Add Task	push()	Add a new task object to the array
+Display Tasks	forEach()	Loop through the array and display each task in the DOM
+Delete Task	filter()	Remove a task based on index
+Mark Complete	Index Access	Toggle completed property on the task object

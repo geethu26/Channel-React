@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtered scores</title>
+  </head>
+  <body>
+    <h2>Check if all elements in an array pass a custom test.</h2>
+    <h2>Test:display scores, scores>75</h2>
+    <script>
+      function testScores(scores, callback) {
+        let result = [];
+        for (let score of scores) {
+          if (callback(score)) {
+            result.push(score);
+          }
+        }
+        return result;
+      }
+
+      const scores = [85, 92, 72, 90, 65];
+      const checkScore = (score) => score > 75;
+      console.log("Filtered scores:", testScores(scores, checkScore));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study - Task Manager</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: lightblue;
+      }
+      .heading {
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        font-family: "Lucida Sans", sans-serif;
+      }
+      .container {
+        width: 500px;
+        background-color: pink;
+        border-radius: 8px;
+        box-shadow: 2px 2px gray;
+        padding: 30px;
+      }
+      .input input {
+        height: 30px;
+        width: 300px;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 5px;
+      }
+      .input button {
+        height: 34px;
+        width: 100px;
+        background-color: grey;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: "Trebuchet MS", sans-serif;
+        font-weight: 700;
+      }
+      .tasks ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .tasks li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+
+      .task-buttons {
+        display: flex;
+      }
+
+      .task-buttons button {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+      }
+      .done {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Task Manager</h1>
+    <div class="container">
+      <div class="input">
+        <input type="text" id="inputTask" />
+        <button type="submit" onclick="addTask()">Add Task</button>
+      </div>
+      <div class="tasks">
+        <ul id="taskList">
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function addTask() {
+        const taskText = document.getElementById("inputTask").value.trim();
+
+        const li = document.createElement("li");
+        const span = document.createElement("span");
+        span.textContent = taskText;
+
+        const buttonsDiv = document.createElement("div");
+        buttonsDiv.classList.add("task-buttons");
+
+        const doneButton = document.createElement("button");
+        doneButton.innerHTML = '<i class="fa fa-check"></i>';
+        doneButton.onclick = () => {
+          span.classList.toggle("done");
+        };
+
+        const deleteButton = document.createElement("button");
+        deleteButton.innerHTML = '<i class="material-icons">delete</i>';
+        deleteButton.onclick = () => li.remove();
+
+        buttonsDiv.appendChild(doneButton);
+        buttonsDiv.appendChild(deleteButton);
+
+        li.appendChild(span);
+        li.appendChild(buttonsDiv);
+
+        document.getElementById("taskList").appendChild(li);
+        document.getElementById("inputTask").value = "";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom sort with callback</title>
+  </head>
+  <body>
+    <h2>Sorting name and age</h2>
+    <script>
+      const users = [
+        { name: "John", age: 30 },
+        { name: "Bob", age: 25 },
+        { name: "Charlie", age: 35 },
+      ];
+
+      function sortBy(array, callback) {
+        return [...array].sort(callback); //spread operator is used here
+      }
+
+      const sortedAge = sortBy(users, (a, b) => a.age - b.age);
+      console.log("sorted by age:", sortedAge);
+
+      const sortedName = sortBy(users, (a, b) => a.name.localeCompare(b.name));
+      console.log("sorted by name:", sortedName);
+
+      //   (a,b) => a.age - b.age
+      //   compares
+      //   if result negative -> a before b
+      //   if result 0 -> same order
+      //   if result positive -> b before a
+    </script>
+  </body>
+</html>
