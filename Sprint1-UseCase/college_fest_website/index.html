@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Fest Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      .carousel-item img {
+        height: 400px;
+        object-fit: cover;
+      }
+      .hero-section {
+        background: linear-gradient(135deg, #dc3545, #fd7e14);
+        color: white;
+        padding: 3rem 0;
+      }
+      .feature-card {
+        transition: transform 0.3s ease;
+      }
+      .feature-card:hover {
+        background-color: lightgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand fw-bold">FestConnect</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="register.html" class="nav-link">Register</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-4 mb-4">Welcome to FestConnect!</h1>
+        <p class="lead mb-4">
+          Your one-stop platform to discover, register, and celebrate college
+          festivals like never before. From cultural fests to tech events — find
+          it all here!
+        </p>
+        <a href="events.html" class="btn btn-light btn-lg me-3"
+          >Explore Events</a
+        >
+        <a href="register.html" class="btn btn-outline-light btn-lg"
+          >Register Now</a
+        >
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Featured Events</h2>
+      <div id="festCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#festCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#festCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#festCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=400&fit=crop"
+              class="d-block w-100"
+              alt="Cultural Festival"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cultural Extravaganza 2025</h5>
+              <p>
+                Experience the rich heritage and diverse cultures through dance,
+                music, and art performances.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1682123973193-e087937a9de9?q=80&w=2070&auto=format&fit=crop"
+              class="d-block w-100"
+              alt="Tech Festival"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>CodeCrack</h5>
+              <p>
+                Join the ultimate coding challenge where tech enthusiasts
+                compete in hackathons, workshops, and tech talks.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1628716972445-fe2e650ae00d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="Music Festival"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Rhythm & Beats Festival</h5>
+              <p>
+                Get ready to groove with live concerts, DJ nights, and battle of
+                the bands competitions.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1663050756824-165ee7eafdac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="d-block w-100"
+              alt="Music Festival"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Robozone</h5>
+              <p>
+                Join the ultimate robotics competition where teams battle it out
+                with their innovative robots in a thrilling arena.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#festCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#festCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h2 class="text-center mb-5">Why Choose FestConnect?</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 feature-card border-0 shadow-sm">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <i class="bi bi-calendar-event display-4 text-danger"></i>
+              </div>
+              <h5 class="card-title">Easy Event Discovery</h5>
+              <p class="card-text">
+                Browse through hundreds of college festivals and events
+                happening across the country. Filter by location, date, and
+                category.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 feature-card border-0 shadow-sm">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <i class="bi bi-person-check display-4 text-danger"></i>
+              </div>
+              <h5 class="card-title">Quick Registration</h5>
+              <p class="card-text">
+                Register for multiple events with just a few clicks. Track your
+                registrations and get instant confirmations via email.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 feature-card border-0 shadow-sm">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <i class="bi bi-people display-4 text-danger"></i>
+              </div>
+              <h5 class="card-title">Connect & Network</h5>
+              <p class="card-text">
+                Meet like-minded students, form teams for competitions, and
+                build lasting connections within the college community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>FestConnect</h5>
+            <p>
+              Connecting students with amazing college festivals across the
+              nation.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>&copy; 2025 FestConnect. All rights reserved.</p>
+            <small>Follow us on social media for the latest updates!</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
