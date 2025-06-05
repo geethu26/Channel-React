@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS examples</title>
+  </head>
+  <body>
+    <h3>This is a text written in html h3 tag</h3>
+    <script>
+      var car = {
+        brand: "Ferrari",
+        color: "Blue",
+        cost: 50000000,
+        soundMade: function () {
+          if (this.brand == "Ferrari") {
+            return "the car goes swoosh";
+          } else {
+            return "The car goes vroom";
+          }
+        },
+      };
+      console.log(car.soundMade());
+    </script>
+  </body>
+</html>

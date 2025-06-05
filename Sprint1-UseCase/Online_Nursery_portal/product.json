@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Daisy",
+    "image": "images/daisy.jpg",
+    "description": "The daisy is a cheerful flower known for its white petals and yellow center, symbolizing innocence, purity, and new beginnings. Its name, derived from the Old English term 'day's eye,' reflects its habit of opening with the morning sun and closing at dusk.",
+    "price": 20
+  },
+  {
+    "id": 2,
+    "name": "Jasmine",
+    "image": "images/jasmine.jpg",
+    "description": "Jasmine is a fragrant, twining shrub with star-shaped white or yellow flowers, often associated with love and beauty. Native to Asia and the Caucasus, it is also the national flower of Pakistan.",
+    "price": 13
+  },
+  {
+    "id": 3,
+    "name": "Lily",
+    "image": "images/lilly.jpg",
+    "description": "Lilies are elegant flowers with trumpet-shaped blooms, symbolizing purity and refined beauty. They are commonly used in weddings and funerals to convey a range of emotions.",
+    "price": 22
+  },
+  {
+    "id": 4,
+    "name": "Hydrangea",
+    "image": "images/hydrangea.jpg",
+    "description": "Hydrangeas are shrubs known for their large, globe-like clusters of flowers that can change color based on soil pH. They symbolize heartfelt emotions and are popular in floral arrangements.",
+    "price": 34
+  },
+  {
+    "id": 5,
+    "name": "Hibiscus",
+    "image": "images/hibiscus.jpg",
+    "description": "Hibiscus flowers are large, trumpet-shaped blooms that come in various colors, symbolizing beauty and femininity. They are also associated with tropical regions and are used in traditional ceremonies.",
+    "price": 15
+  },
+  {
+    "id": 6,
+    "name": "Rose",
+    "image": "images/rose.jpg",
+    "description": "Roses are classic flowers known for their layered petals and sweet fragrance. They symbolize love and passion, with different colors conveying various meanings.",
+    "price": 20
+  },
+  {
+    "id": 7,
+    "name": "Sunflower",
+    "image": "images/sunflower.jpg",
+    "description": "Sunflowers are tall plants with large, bright yellow blooms that resemble the sun. They symbolize adoration, loyalty, and longevity, and are known for their ability to track the sun's movement.",
+    "price": 34
+  },
+  {
+    "id": 8,
+    "name": "Orchid",
+    "image": "images/orchid.jpg",
+    "description": "Orchids are exotic flowers with intricate and symmetrical petals, symbolizing luxury, strength, and beauty. They are highly prized in floral arrangements and have a rich cultural significance.",
+    "price": 26
+  },
+  {
+    "id": 9,
+    "name": "Marigold",
+    "image": "images/marigold.jpg",
+    "description": "Marigolds are vibrant flowers with golden or orange hues, symbolizing warmth and optimism. They are often used in celebrations and have medicinal properties in various cultures.",
+    "price": 24
+  }
+]
