@@ -1,0 +1,92 @@
+[
+  {
+    "booking_id": "B001",
+    "guests": ["John", "Emma"],
+    "room_type": "Deluxe",
+    "check_in": "2025-06-10",
+    "check_out": "2025-06-12",
+    "status": "Confirmed",
+    "amenities": ["WiFi", "Breakfast", "Pool Access"]
+  },
+  {
+    "booking_id": "B002",
+    "guests": ["Anjali"],
+    "room_type": "Suite",
+    "check_in": "2025-06-11",
+    "check_out": "2025-06-13",
+    "status": "Pending",
+    "amenities": ["WiFi", "Gym Access"]
+  },
+  {
+    "booking_id": "B003",
+    "guests": ["Michael", "Sara", "David"],
+    "room_type": "Standard",
+    "check_in": "2025-06-09",
+    "check_out": "2025-06-11",
+    "status": "Confirmed",
+    "amenities": ["Breakfast"]
+  },
+  {
+    "booking_id": "B004",
+    "guests": ["Priya"],
+    "room_type": "Deluxe",
+    "check_in": "2025-06-12",
+    "check_out": "2025-06-15",
+    "status": "Cancelled",
+    "amenities": ["WiFi", "Breakfast", "Parking"]
+  },
+  {
+    "booking_id": "B005",
+    "guests": ["David", "Alex"],
+    "room_type": "Suite",
+    "check_in": "2025-06-10",
+    "check_out": "2025-06-14",
+    "status": "Confirmed",
+    "amenities": ["WiFi", "Pool Access"]
+  },
+  {
+    "booking_id": "B006",
+    "guests": ["Natasha"],
+    "room_type": "Standard",
+    "check_in": "2025-06-13",
+    "check_out": "2025-06-16",
+    "status": "Pending",
+    "amenities": ["Breakfast"]
+  },
+  {
+    "booking_id": "B007",
+    "guests": ["Raj", "Anita"],
+    "room_type": "Deluxe",
+    "check_in": "2025-06-11",
+    "check_out": "2025-06-12",
+    "status": "Confirmed",
+    "amenities": ["WiFi", "Gym Access", "Parking"]
+  },
+  {
+    "booking_id": "B008",
+    "guests": ["Emma"],
+    "room_type": "Suite",
+    "check_in": "2025-06-14",
+    "check_out": "2025-06-17",
+    "status": "Confirmed",
+    "amenities": ["WiFi", "Breakfast"]
+  },
+  {
+    "booking_id": "B009",
+    "guests": ["John"],
+    "room_type": "Standard",
+    "check_in": "2025-06-10",
+    "check_out": "2025-06-11",
+    "status": "Cancelled",
+    "amenities": ["Parking"]
+  },
+  {
+    "booking_id": "B010",
+    "guests": ["Anjali", "Michael"],
+    "room_type": "Deluxe",
+    "check_in": "2025-06-15",
+    "check_out": "2025-06-18",
+    "status": "Pending",
+    "amenities": ["WiFi", "Pool Access", "Breakfast"]
+  }
+]

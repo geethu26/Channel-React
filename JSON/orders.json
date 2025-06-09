@@ -1,0 +1,28 @@
+{
+  "orders": [
+    {
+      "order_id": 101,
+      "customer": "Amit",
+      "items": ["Rose Plant", "Tulsi Plant"],
+      "total_amount": 250,
+      "order_date": "2025-06-08",
+      "status": "Delivered"
+    },
+    {
+      "order_id": 102,
+      "customer": "Sejal",
+      "items": ["Hibuscus Plannt", "Money Plant", "Curry Leaves Palnt"],
+      "total_amount": 550,
+      "order_date": "2025-06-08",
+      "status": "Shipped"
+    },
+    {
+      "order_id": 103,
+      "customer": "Khusi",
+      "items": ["Rose Plant", "Jasmine Plant"],
+      "total_amount": 105,
+      "order_date": "2025-06-08",
+      "status": "Pending"
+    }
+  ]
+}

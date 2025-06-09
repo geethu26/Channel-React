@@ -1,0 +1,87 @@
+{
+  "companyName": "Global Tech Solutions",
+  "foundedYear": 2005,
+  "isActive": true,
+  "headquarters": {
+    "address": "123 Innovation Drive",
+    "city": "Silicon Valley",
+    "state": "CA",
+    "zipcode": "94025"
+  },
+  "departments": [
+    {
+      "name": "Software Development",
+      "budget": 5000000,
+      "employees": [
+        {
+          "id": "DEV0001",
+          "firstName": "Alice",
+          "lastName": "Smith",
+          "skills": ["Javascript", "Node.js", "React", "Python"],
+          "projects": [
+            { "name": "Project Alpha", "status": "completed" },
+            { "name": "Project Beta", "status": "in progress" }
+          ]
+        },
+        {
+          "id": "DEV0002",
+          "firstName": "Bob",
+          "lastName": "Wiley",
+          "skills": ["Python", "Django", "AWS"],
+          "projects": [{ "name": "Project Gamma", "status": "pending" }]
+        }
+      ]
+    },
+    {
+      "name": "Marketing",
+      "budget": 15000000,
+      "employees": [
+        {
+          "id": "MKT001",
+          "firstName": "Diya",
+          "lastName": "Gupta",
+          "skills": ["SEO", "Content Marketing", "Social Media"],
+          "campaigns": ["Summmer Sale", "Holiday Campaign"]
+        }
+      ]
+    },
+    {
+      "name": "Human Resources",
+      "budget": 800000,
+      "employees": [
+        {
+          "id": "HR001",
+          "firstName": "Tiya",
+          "lastName": "D'silva",
+          "skills": ["Recruitment", "Employee Relations"]
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "PROD001",
+      "name": "Cloud Computing Platform",
+      "versions": [
+        {
+          "versionNumber": "1.0",
+          "releaseDate": "2020-01-15"
+        },
+        {
+          "versionNumber": "2.0",
+          "releaseDate": "2022-03-20"
+        }
+      ]
+    },
+    {
+      "id": "PROD002",
+      "name": "AI Analytics",
+      "versions": [
+        {
+          "versionNumber": "1.0",
+          "releaseDate": "2023-07-01"
+        }
+      ]
+    }
+  ]
+}

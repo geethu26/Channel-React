@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Details</title>
+  </head>
+  <body>
+    <h2>Course Details</h2>
+    <id id="output"> </id>
+    <script>
+      fetch("syntax.json")
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("Syntax data:", data);
+          const result = data.map(
+            (course) =>
+              `<p>Name: ${course.course} - Duration: ${course.duration}<br>
+                Topic: ${course.topics.join(", ")}<\p>`
+          );
+          document.getElementById("output").innerHTML = result.join("");
+        });
+    </script>
+  </body>
+</html>

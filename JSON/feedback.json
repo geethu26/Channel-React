@@ -1,0 +1,44 @@
+{
+  "feedbacks": [
+    {
+      "id": 1,
+      "username": "John Bay",
+      "rating": 4.5,
+      "comment": "Great product, Very Useful",
+      "submitted_on": "2025-06-09",
+      "category": "Product"
+    },
+    {
+      "id": 2,
+      "username": "Brenda Lionelle",
+      "rating": 4.0,
+      "comment": "Customer support was slow",
+      "submitted_on": "2025-03-29",
+      "category": "Support"
+    },
+    {
+      "id": 3,
+      "username": "Tim McCreary",
+      "rating": 5.0,
+      "comment": "Excellent user experience",
+      "submitted_on": "2025-16-01",
+      "category": "UX"
+    },
+    {
+      "id": 4,
+      "username": "Lindy May",
+      "rating": 3.5,
+      "comment": "App crashes often on login",
+      "submitted_on": "2025-08-04",
+      "category": "Bug"
+    },
+    {
+      "id": 5,
+      "username": "Tina Yong ",
+      "rating": 4.2,
+      "comment": "Overall good. But payment integration ha sto improve",
+      "submitted_on": "2025-06-09",
+      "category": "Payment"
+    }
+  ]
+}

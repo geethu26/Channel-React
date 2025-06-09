@@ -1,0 +1,84 @@
+{
+  "students": [
+    {
+      "roll_no": "S101",
+      "name": "Ravi",
+      "math_mark": 85,
+      "science_mark": 92,
+      "grade": "A",
+      "passed": "Yes"
+    },
+    {
+      "roll_no": "S102",
+      "name": "Neha",
+      "math_mark": 70,
+      "science_mark": 65,
+      "grade": "B",
+      "passed": "Yes"
+    },
+    {
+      "roll_no": "S103",
+      "name": "Amit",
+      "math_mark": 90,
+      "science_mark": 85,
+      "grade": "A",
+      "passed": "Yes"
+    },
+    {
+      "roll_no": "S104",
+      "name": "Sara",
+      "math_mark": 76,
+      "science_mark": 79,
+      "grade": "B",
+      "passed": "Yes"
+    },
+    {
+      "roll_no": "S105",
+      "name": "John",
+      "math_mark": 88,
+      "science_mark": 90,
+      "grade": "A",
+      "passed": "Yes"
+    },
+    {
+      "roll_no": "S106",
+      "name": "Priya",
+      "math_mark": 92,
+      "science_mark": 95,
+      "grade": "A+",
+      "passed": "Yes"
+    },
+    {
+      "roll_no": "S107",
+      "name": "Karan",
+      "math_mark": 65,
+      "science_mark": 60,
+      "grade": "C",
+      "passed": "No"
+    },
+    {
+      "roll_no": "S108",
+      "name": "Lina",
+      "math_mark": 80,
+      "science_mark": 82,
+      "grade": "B",
+      "passed": "Yes"
+    },
+    {
+      "roll_no": "S109",
+      "name": "Mehul",
+      "math_mark": 73,
+      "science_mark": 76,
+      "grade": "B",
+      "passed": "Yes"
+    },
+    {
+      "roll_no": "S110",
+      "name": "Divya",
+      "math_mark": 87,
+      "science_mark": 89,
+      "grade": "A",
+      "passed": "Yes"
+    }
+  ]
+}
