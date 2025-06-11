@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Rose",
+    "type": "Flower",
+    "price": 150
+  },
+  {
+    "id": 101,
+    "title": "Learning Javascript",
+    "author": "Jane"
+  },
+  {
+    "employeeId": "EMP01",
+    "name": "John",
+    "department": "HR"
+  },
+  {
+    "movie": "Inception",
+    "year": 2010,
+    "rating": 8.8
+  },
+  {
+    "username": "geejay",
+    "email": "gee@mail.com",
+    "isVerified": true
+  }
+]

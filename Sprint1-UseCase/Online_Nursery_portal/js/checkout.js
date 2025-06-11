@@ -31,6 +31,8 @@ function clearCart() {
   totalAmount.textContent = 0;
   loadCart();
   alert("Cart has been cleared.");
+
+  document.getElementById("clearCartButton").disabled = true;
 }
 
 loadCart();

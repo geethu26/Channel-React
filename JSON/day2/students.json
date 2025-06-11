@@ -1,0 +1,105 @@
+{
+  "school": "Green Valley High School",
+  "students": [
+    {
+      "id": "S101",
+      "name": "Arjun Mehta",
+      "grade": "10",
+      "section": "A",
+      "subjects": [
+        {
+          "name": "Math",
+          "marks": 92
+        },
+        {
+          "name": "Science",
+          "marks": 89
+        },
+        {
+          "name": "English",
+          "marks": 85
+        }
+      ]
+    },
+    {
+      "id": "S102",
+      "name": "Tara Sharma",
+      "grade": "10",
+      "section": "B",
+      "subjects": [
+        {
+          "name": "Math",
+          "marks": 87
+        },
+        {
+          "name": "Science",
+          "marks": 91
+        },
+        {
+          "name": "English",
+          "marks": 90
+        }
+      ]
+    },
+    {
+      "id": "S103",
+      "name": "Rahul Arora",
+      "grade": "10",
+      "section": "A",
+      "subjects": [
+        {
+          "name": "Math",
+          "marks": 88
+        },
+        {
+          "name": "Science",
+          "marks": 78
+        },
+        {
+          "name": "English",
+          "marks": 82
+        }
+      ]
+    },
+    {
+      "id": "S103",
+      "name": "Dev Mane",
+      "grade": "10",
+      "section": "B",
+      "subjects": [
+        {
+          "name": "Math",
+          "marks": 80
+        },
+        {
+          "name": "Science",
+          "marks": 0
+        },
+        {
+          "name": "English",
+          "marks": 82
+        }
+      ]
+    },
+    {
+      "id": "S103",
+      "name": "Raj Chopra",
+      "grade": "10",
+      "section": "A",
+      "subjects": [
+        {
+          "name": "Math",
+          "marks": 0
+        },
+        {
+          "name": "Science",
+          "marks": 78
+        },
+        {
+          "name": "English",
+          "marks": 82
+        }
+      ]
+    }
+  ]
+}

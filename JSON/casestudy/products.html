@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+  </head>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      background-color: antiquewhite;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: brown;
+    }
+    .filter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .filter-bar {
+      text-align: center;
+      margin: 20px 10px;
+    }
+    select,
+    button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: rgba(143, 40, 40, 0.984);
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    th {
+      background-color: rgba(143, 40, 40, 0.984);
+      color: white;
+    }
+
+    /* .highlight {
+      background-color: rgba(223, 86, 86, 0.984);
+      font-weight: bold;
+    } */
+
+    .no-data {
+      color: red;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <h2>Product Catalog</h2>
+    <div class="filter">
+      <div class="filter-bar">
+        <label for="categorySelect">Select Category</label>
+        <select name="" id="categorySelect">
+          <option value="allCategories">All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="audio">Audio</option>
+          <option value="smartHome">Smart Home</option>
+          <option value="photography">Photography</option>
+          <option value="homeNoffice">Home & Office</option>
+          <option value="computers">Computers</option>
+        </select>
+      </div>
+      <div class="filter-bar">
+        <label for="categorySelect">Availability</label>
+        <select name="" id="availabilitySelect">
+          <option value="allProducts">All Products</option>
+          <option value="inStock">In Stock</option>
+          <option value="outStock">Out of Stock</option>
+        </select>
+      </div>
+      <button onclick="applyFilter()">Apply Filters</button>
+    </div>
+    <table>
+      <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Brand</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Status</th>
+        <th>Description</th>
+        <th>Shipping Info</th>
+      </thead>
+      <tbody id="productTableBody">
+        <!-- Fetch dynamically -->
+      </tbody>
+    </table>
+    <p id="noDataMessage" class="no-data" style="display: none">
+      No products found matching your criteria.
+    </p>
+    <script>
+      let productData = [];
+      fetch("products.json")
+        .then((res) => res.json())
+        .then((data) => {
+          productData = data;
+          renderTable(productData);
+        })
+        .catch((err) => {
+          console.error("Error Loading JSON:", err);
+          document.getElementById("productTableBody").innerHTML =
+            "<tr><td colspan='8'>Unable to load data</td></tr>";
+        });
+
+      //render data to table
+      function renderTable(data) {
+        const tbody = document.getElementById("productTableBody");
+        tbody.innerHTML = "";
+        document.getElementById("noDataMessage").style.display =
+          data.length === 0 ? "block" : "none";
+
+        data.forEach((product) => {
+          const shippingInfo = product.shippingInfo;
+          const shippingDetails = `
+          <ul >
+            <li><strong>weightKg:</strong>${shippingInfo.weightKg}</li>
+            <li><strong>dimensionCms:</strong></li>
+            <ul> 
+              <li>length: ${shippingInfo.dimensionsCm.length}</li>
+              <li>width: ${shippingInfo.dimensionsCm.width}</li>
+              <li>height: ${shippingInfo.dimensionsCm.height}</li>
+            </ul>
+            <li><strong>delivery:</strong>${shippingInfo.estimatedDeliveryDays}</li>
+          </ul>
+          `;
+          const row = `
+            <tr>
+                <td>${product.productId}</td>
+                <td>${product.name}</td>
+                <td>${product.brand}</td>
+                <td>${product.category}</td>
+                <td>${product.currency} ${product.price}</td>
+                <td style="background-color: ${
+                  product.inStock ? "#90ee90" : "#f08080"
+                };">${product.inStock ? "In Stock" : "Out of Stock"} (${
+            product.stockQuantity
+          }) </td>
+                <td>${product.description} </td>
+                <td>${shippingDetails} </td>
+            </tr>
+            `;
+          tbody.innerHTML += row;
+        });
+      }
+
+      function applyFilter() {
+        const categoryValue = document.getElementById("categorySelect").value;
+        const availabilityValue =
+          document.getElementById("availabilitySelect").value;
+        let filteredData = productData;
+
+        //by category
+        if (categoryValue != "allCategories") {
+          filteredData = filteredData.filter((product) => {
+            return (
+              product.category.toLowerCase().replace(/\s+/g, "") ===
+              categoryValue.toLowerCase()
+            );
+          });
+        }
+
+        //by availability
+        if (availabilityValue === "inStock") {
+          filteredData = filteredData.filter(
+            (product) => product.inStock === true
+          );
+        } else if (availabilityValue === "outStock") {
+          filteredData = filteredData.filter(
+            (product) => product.inStock === false
+          );
+        }
+
+        renderTable(filteredData);
+      }
+    </script>
+  </body>
+</html>

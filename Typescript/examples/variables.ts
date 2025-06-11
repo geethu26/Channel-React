@@ -1,4 +1,4 @@
-///stire temporary data
+///store temporary data
 let cartTotal = 0;
 
 //API constant

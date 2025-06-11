@@ -1,0 +1,83 @@
+{
+  "products": [
+    {
+      "id": "76e0",
+      "productId": 4,
+      "name": "Laptop",
+      "category": "Electronics",
+      "price": 399.99,
+      "inStock": true
+    },
+    {
+      "productId": 1,
+      "name": "Smartphone X100",
+      "category": "Electronics",
+      "price": 595.99,
+      "inStock": true,
+      "id": "cda9"
+    },
+    {
+      "id": "2ef5",
+      "productId": 2,
+      "name": "Wireless Headphones",
+      "category": "Electronics",
+      "price": 299.99,
+      "inStock": false
+    },
+    {
+      "id": "c42c",
+      "productId": 3,
+      "name": "Printer",
+      "category": "Electronics",
+      "price": 259.99,
+      "inStock": true
+    }
+  ],
+  "users": [
+    {
+      "id": "2",
+      "userId": 2,
+      "username": "fiona1123",
+      "email": "fiona1123@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "2",
+      "userId": 3,
+      "username": "123brenda",
+      "email": "brenda@gmail.com",
+      "role": "admin"
+    },
+    {
+      "id": "3",
+      "userId": 4,
+      "username": "layladay",
+      "email": "laylay@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "2416",
+      "userId": 5,
+      "username": "arjunkir",
+      "email": "kirarar@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "692b",
+      "userId": 1,
+      "username": "johndoe",
+      "email": "jhonnyboi@gmail.com",
+      "role": "user"
+    }
+  ],
+  "orders": [
+    {
+      "id": "71e3",
+      "orderId": 1,
+      "userId": 1,
+      "productId": 2,
+      "quantity": 2,
+      "status": "confirmed"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "clothstore": [
+    {
+      "id": "1",
+      "name": "Women's Kurti",
+      "cateogry": "Women",
+      "size": "M",
+      "price": 499,
+      "inStock": true
+    },
+    {
+      "id": "2",
+      "name": "Men's Trousers",
+      "cateogry": "Men",
+      "size": "XL",
+      "price": 1599,
+      "inStock": false
+    },
+    {
+      "id": "3",
+      "name": "Kid's Rompers",
+      "cateogry": "Kids",
+      "size": "S",
+      "price": 999,
+      "inStock": true
+    },
+    {
+      "id": "4",
+      "name": "Women's Cardigan",
+      "cateogry": "Women",
+      "size": "M",
+      "price": 899,
+      "inStock": false
+    },
+    {
+      "id": "5",
+      "name": "Men's Shirt",
+      "cateogry": "Men",
+      "size": "L",
+      "price": 1300,
+      "inStock": true
+    }
+  ]
+}
