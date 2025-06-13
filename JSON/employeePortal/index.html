@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Portal</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: cadetblue;
+      }
+      h1 {
+        text-align: center;
+        color: rgb(23, 23, 115);
+      }
+      .buttons {
+        margin-left: 200px;
+      }
+      .buttons button {
+        height: 50px;
+        width: 100px;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+      }
+      .buttons button:hover {
+        background-color: rgb(23, 23, 115);
+        cursor: pointer;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to EMS - Employee Management System</h1>
+    <div class="buttons">
+      <button type="submit" onclick="login()">Login</button>
+      <button type="submit" onclick="signUp()">Sign Up</button>
+    </div>
+    <script>
+      function login() {
+        window.location.href = "login.html";
+      }
+      function signUp() {
+        window.location.href = "signup.html";
+      }
+    </script>
+  </body>
+</html>

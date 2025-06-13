@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <style>
+      body {
+        background: cadetblue;
+      }
+      h1 {
+        text-align: center;
+        color: rgb(23, 23, 115);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="greetMessage">Welcome</h1>
+    <table
+      border="1"
+      cellpadding="15"
+      style="border-color: black; background-color: azure; margin-left: 300px"
+    >
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="employeeList"></tbody>
+    </table>
+    <script>
+      url = "http://localhost:3000/employees";
+      function loadEmployee() {
+        fetch(url)
+          .then((res) => res.json())
+          .then((data) => {
+            const tbody = document.getElementById("employeeList");
+            tbody.innerHTML = "";
+            data.forEach((e) => {
+              const row = `
+        <tr>
+        <td>${e.id}</td>
+        <td>${e.name}</td>
+        <td>${e.role}</td>
+        <td>${e.email}</td>
+        <td><button onclick="editDetails()">Edit</button>
+        <button onclick="remove()">Remove</button></td>
+    </tr>`;
+              tbody.innerHTML += row;
+            });
+          });
+      }
+      function remove(id) {
+        const confirmDelete = confirm(
+          "Are you sure you want to delete this employee?"
+        );
+        if (confirmDelete) {
+          fetch(`${url}/${id}`, {
+            method: "DELETE",
+          }).then((res) => {
+            if (res.ok) {
+              alert("Employee deleted successfully.");
+              loadProducts();
+            } else {
+              alert("Failed to delete employee.");
+            }
+          });
+        }
+      }
+      setInterval(loadEmployee, 3000);
+      loadEmployee();
+    </script>
+  </body>
+</html>
